@@ -1,0 +1,87 @@
+"use client"
+
+import { Bot } from "lucide-react"
+import { useLanguage } from "@/contexts/LanguageContext"
+
+export function Footer() {
+  const { t } = useLanguage()
+
+  return (
+    <footer className="bg-gray-900 text-white py-16 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-800/50 to-gray-900/50"></div>
+      <div className="container mx-auto px-4 relative">
+        <div className="grid md:grid-cols-4 gap-8">
+          <div className="space-y-4 animate-fade-in-up">
+            <div className="flex items-center space-x-2">
+              <div className="w-10 h-10 bg-gradient-to-r from-[#268656] to-[#1f6b4a] rounded-lg flex items-center justify-center">
+                <Bot className="w-6 h-6 text-white" />
+              </div>
+              <span className="text-2xl font-bold">Waichatt</span>
+            </div>
+            <p className="text-gray-400">{t("footer.tagline")}</p>
+          </div>
+
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            <h4 className="font-semibold mb-4">{t("footer.navigation")}</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>
+                <a href="#inicio" className="hover:text-white transition-colors hover:translate-x-1 inline-block">
+                  {t("nav.home")}
+                </a>
+              </li>
+              <li>
+                <a href="#que-es" className="hover:text-white transition-colors hover:translate-x-1 inline-block">
+                  {t("nav.about")}
+                </a>
+              </li>
+              <li>
+                <a href="#crm" className="hover:text-white transition-colors hover:translate-x-1 inline-block">
+                  {t("nav.crm")}
+                </a>
+              </li>
+              <li>
+                <a href="#planes" className="hover:text-white transition-colors hover:translate-x-1 inline-block">
+                  {t("nav.plans")}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <h4 className="font-semibold mb-4">{t("footer.services")}</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>{t("footer.service1")}</li>
+              <li>{t("footer.service2")}</li>
+              <li>{t("footer.service3")}</li>
+              <li>{t("footer.service4")}</li>
+            </ul>
+          </div>
+
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <h4 className="font-semibold mb-4">{t("footer.contact")}</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>info@waichatt.com</li>
+              <li>{t("footer.support")}</li>
+              <li>{t("footer.demo")}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center animate-fade-in-up"
+          style={{ animationDelay: "0.4s" }}
+        >
+          <p className="text-gray-400">{t("footer.rights")}</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" className="text-gray-400 hover:text-white transition-colors hover:scale-110 inline-block">
+              {t("footer.privacy")}
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors hover:scale-110 inline-block">
+              {t("footer.terms")}
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
