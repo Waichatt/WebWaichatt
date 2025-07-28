@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Sparkles, Play, ArrowRight } from "lucide-react"
+import { Sparkles, ArrowRight, Phone } from "lucide-react"
 import { useInView } from "@/hooks/useInView"
 import { useLanguage } from "@/contexts/LanguageContext"
 
@@ -44,7 +44,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
           <div className={`relative z-10 ${heroInView ? "animate-scale-in" : "opacity-0"}`}>
             <div className="relative transform hover:scale-105 transition-transform duration-700 animate-float">
               <img
-                src="/images/telefono-whatsapp.avif"
+                src="/images/Frame2.png"
                 alt="Waichatt WhatsApp Business Automation"
                 className="w-full h-auto max-w-sm mx-auto drop-shadow-2xl"
               />
@@ -132,7 +132,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
                 </Badge>
                 <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
                   {t("hero.title")}{" "}
-                  <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#1E6B49] to-[#7CF663] bg-clip-text text-transparent">
                     {t("hero.title.highlight")}
                   </span>
                 </h1>
@@ -141,13 +141,15 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
+                  onClick={() => window.open("https://wa.me/+5493816814079", "_blank")}
                   size="lg"
                   className="bg-gradient-to-r from-[#268656] to-[#1f6b4a] hover:from-[#1f6b4a] hover:to-[#268656] text-white shadow-xl hover:shadow-2xl transition-all duration-300 group hover:scale-105 animate-pulse-glow"
                 >
-                  <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                  <Phone className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                   {t("hero.demo")}
                 </Button>
                 <Button
+                  onClick={() => window.open("https://calendar.app.google/2ayLKE9zywcmeJEh7", "_blank")}
                   size="lg"
                   variant="outline"
                   className="border-white/40 text-white hover:bg-white hover:text-[#268656] group bg-white/10 backdrop-blur-sm hover:scale-105 transition-all duration-300"

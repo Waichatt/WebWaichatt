@@ -29,7 +29,7 @@ export function Header({ scrollY }: HeaderProps) {
   }, [])
 
   // Calculate if we're still in hero section (assuming hero is about 80vh)
-  const isInHeroSection = windowHeight > 0 ? scrollY < windowHeight * 0.8 : true
+  const isInHeroSection = windowHeight > 0 ? scrollY < windowHeight * 0.1 : true
 
   return (
     <header

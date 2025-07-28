@@ -15,9 +15,9 @@ export function CRMSection({ scrollY }: CRMSectionProps) {
   const features = [t("crm.feature1"), t("crm.feature2"), t("crm.feature3"), t("crm.feature4")]
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden " id="crm">
       <div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-20" 
         style={{
           transform: `translateY(${scrollY * 0.3}px)`,
         }}
@@ -52,23 +52,23 @@ export function CRMSection({ scrollY }: CRMSectionProps) {
           </div>
 
           <div className={`relative ${crmInView ? "animate-slide-in-right" : "opacity-0"}`}>
-            <div className="bg-white rounded-2xl shadow-2xl p-4 transform hover:scale-105 transition-transform duration-700 animate-float relative">
+            <div className="bg-white rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-700 animate-float relative">
               <img
-                src="/images/CRMimagen.jpg"
+                src="/images/CRMimagen.png"
                 alt="Dashboard CRM de Waichatt"
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg "
               />
 
               {/* Logos de integración flotantes */}
-              <div className="absolute -top-6 -left-14 flex flex-col space-y-3">
-                <div className="bg-white rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-300 animate-bounce-subtle">
-                  <img src="/images/logoWhatsapp.png" alt="WhatsApp Integration" className="w-14 h-14" />
+              <div className="absolute -top-6 -left-14 hidden md:flex flex-col space-y-3">
+                <div className="bg-white rounded-full p-3 shadow-lg hover:scale-110 transition-transform duration-300 animate-bounce-subtle">
+                  <img src="/images/logoWhatsapp.png" alt="WhatsApp Integration" className="w-12 h-12" />
                 </div>
                 <div
-                  className="bg-white rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-300 animate-bounce-subtle flex items-center justify-center"
+                  className="bg-white rounded-full p-3 shadow-lg hover:scale-110 transition-transform duration-300 animate-bounce-subtle flex items-center justify-center"
                   style={{ animationDelay: "0.5s" }}
                 >
-                  <img src="/images/logoMeta.png" alt="Meta Integration" className="w-12 h-12 object-contain" />
+                  <img src="/images/logoMeta.png" alt="Meta Integration" className="w-11 h-11 object-contain" />
                 </div>
               </div>
 
@@ -82,7 +82,7 @@ export function CRMSection({ scrollY }: CRMSectionProps) {
               </div>
 
               {/* Indicador de estado en vivo */}
-              <div className="absolute bottom-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg animate-pulse flex items-center space-x-2">
+              <div className="absolute -bottom-1 -left-1 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg animate-pulse flex items-center space-x-2">
                 <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
                 <span>{t("crm.live")}</span>
               </div>

@@ -24,16 +24,16 @@ export function LanguageSelector({ isInHeroSection = false }: LanguageSelectorPr
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors duration-200 ${
-          isInHeroSection ? "hover:bg-white/10 text-white" : "hover:bg-gray-100 text-gray-700"
+          isInHeroSection ? "hover:bg-white/10 text-white" : "hover:bg-gray-100 "
         }`}
       >
-        <Globe className="w-6 h-6" />
-        <span className="text-sm font-medium">
+        <Globe className={`w-6 h-6 ${isInHeroSection ? "text-white" : "text-black/50"}`} />
+        <span className={`text-sm font-medium ${isInHeroSection ? "text-white" : "text-gray-800"}`}>
           {currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}
         </span>
         <ChevronDown
           className={`w-4 h-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""} ${
-            isInHeroSection ? "text-white/70" : "text-gray-500"
+            isInHeroSection ? "text-white/70" : "text-black/50"
           }`}
         />
       </button>

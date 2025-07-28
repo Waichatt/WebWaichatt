@@ -127,7 +127,7 @@ export function PricingSection() {
         <div
           className={`text-center mt-12 space-y-6 ${plansInView ? "animate-fade-in-up" : "opacity-0"}`}
           style={{ animationDelay: "0.5s" }}
-        >
+        > 
           <p className="text-sm text-gray-600">{t("pricing.note")}</p>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-[#268656]/20">

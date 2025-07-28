@@ -8,34 +8,42 @@ export function FAQSection() {
 
   const faqData = [
     {
+      id: "q1",
       question: t("faq.q1"),
       answer: t("faq.a1"),
     },
     {
+      id: "q2",
       question: t("faq.q2"),
       answer: t("faq.a2"),
     },
     {
+      id: "q3",
       question: t("faq.q3"),
       answer: t("faq.a3"),
     },
     {
+      id: "q4",
       question: t("faq.q4"),
       answer: t("faq.a4"),
     },
     {
+      id: "q5",
       question: t("faq.q5"),
       answer: t("faq.a5"),
     },
     {
+      id: "q6",
       question: t("faq.q6"),
       answer: t("faq.a6"),
     },
     {
+      id: "q7",
       question: t("faq.q7"),
       answer: t("faq.a7"),
     },
     {
+      id: "q8",
       question: t("faq.q8"),
       answer: t("faq.a8"),
     },
@@ -53,7 +61,12 @@ export function FAQSection() {
 
           <div className="space-y-4">
             {faqData.map((faq, index) => (
-              <FAQItem key={index} question={faq.question} answer={faq.answer} index={index} />
+              <FAQItem 
+                key={faq.id} 
+                question={faq.question} 
+                answer={faq.answer} 
+                index={index} 
+              />
             ))}
           </div>
         </div>

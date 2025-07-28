@@ -2,6 +2,7 @@
 
 import { Bot } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
+import Image from "next/image"
 
 export function Footer() {
   const { t } = useLanguage()
@@ -12,9 +13,9 @@ export function Footer() {
       <div className="container mx-auto px-4 relative">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4 animate-fade-in-up">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-[#268656] to-[#1f6b4a] rounded-lg flex items-center justify-center">
-                <Bot className="w-6 h-6 text-white" />
+            <div className="flex items-center ">
+              <div className="">
+                <Image src="/images/waichattLogo.png" width={60} height={60} alt="Waichatt Icon" className="w-14 h-14 text-white" />
               </div>
               <span className="text-2xl font-bold">Waichatt</span>
             </div>
@@ -30,11 +31,6 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#que-es" className="hover:text-white transition-colors hover:translate-x-1 inline-block">
-                  {t("nav.about")}
-                </a>
-              </li>
-              <li>
                 <a href="#crm" className="hover:text-white transition-colors hover:translate-x-1 inline-block">
                   {t("nav.crm")}
                 </a>
@@ -42,6 +38,14 @@ export function Footer() {
               <li>
                 <a href="#planes" className="hover:text-white transition-colors hover:translate-x-1 inline-block">
                   {t("nav.plans")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#integraciones"
+                  className="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                >
+                  {t("nav.integrations")}
                 </a>
               </li>
             </ul>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import N8nChatWeb from '@/components/n8n-chat-web'
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ html {
       <body>
         {children}
         <N8nChatWeb />
+        <Analytics />
       </body>
     </html>
   )
