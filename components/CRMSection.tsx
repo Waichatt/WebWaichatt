@@ -15,7 +15,7 @@ export function CRMSection({ scrollY }: CRMSectionProps) {
   const features = [t("crm.feature1"), t("crm.feature2"), t("crm.feature3"), t("crm.feature4")]
 
   return (
-    <section className="py-20 relative overflow-hidden " id="crm">
+    <section className="py-20 relative overflow-hidden select-none " id="crm">
       <div
         className="absolute inset-0 opacity-20" 
         style={{

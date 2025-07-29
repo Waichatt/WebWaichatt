@@ -58,5 +58,5 @@ export default function N8nChatWeb() {
         return () => observer.disconnect();
     }, []);
 
-    return <div id="n8n-chat"></div>;
+    return <div id="n8n-chat" className='select-none'></div>;
 }

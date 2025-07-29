@@ -39,7 +39,7 @@ export function Header({ scrollY }: HeaderProps) {
           : "bg-white/10 backdrop-blur-lg border-b border-white/10"
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4 select-none">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-0 animate-fade-in-left">
             <div className="">
@@ -97,6 +97,16 @@ export function Header({ scrollY }: HeaderProps) {
               }`}
             >
               {t("nav.integrations")}
+            </a>
+            <a
+              href="#preguntas-frecuentes"
+              className={`transition-all duration-300 hover:scale-105 ${
+                isInHeroSection 
+                  ? "text-white hover:text-[#268656]" 
+                  : "text-[#268656] hover:text-[#31634b] drop-shadow-md"
+              }`}
+            >
+              {t("nav.faq")}
             </a>
           </nav>
 
@@ -166,6 +176,16 @@ export function Header({ scrollY }: HeaderProps) {
                 }`}
               >
                 {t("nav.integrations")}
+              </a>
+              <a
+                href="#preguntas-frecuentes"
+                className={`transition-colors ${
+                  isInHeroSection 
+                    ? "text-white hover:text-[#268656]" 
+                    : "text-[#268656] hover:text-[#31634b] drop-shadow-md"
+                }`}
+              >
+                {t("nav.faq")}
               </a>
               <Button className="w-full bg-gradient-to-r from-[#268656] to-[#1f6b4a] hover:from-[#1f6b4a] hover:to-[#268656] text-white">
                 <Calendar className="w-4 h-4 mr-2" />

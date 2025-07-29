@@ -62,7 +62,7 @@ export function PricingSection() {
   ]
 
   return (
-    <section id="planes" className="py-20 bg-white/50 relative overflow-hidden">
+    <section id="planes" className="py-20 bg-white/50 relative overflow-hidden select-none">
       <div className="absolute inset-0 bg-gradient-to-r from-[#268656]/5 to-[#1f6b4a]/5 animate-gradient-shift"></div>
       <div className="container mx-auto px-4" ref={plansRef}>
         <div className={`text-center space-y-6 mb-16 ${plansInView ? "animate-fade-in-up" : "opacity-0"}`}>

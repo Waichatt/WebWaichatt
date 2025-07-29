@@ -15,7 +15,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
   const { t } = useLanguage()
 
   return (
-    <section id="inicio" className="pt-24 pb-20 relative overflow-hidden">
+    <section id="inicio" className="pt-24 pb-20 relative overflow-hidden select-none">
       {/* Background with the provided image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -41,12 +41,12 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
         {/* Main content with phone and features */}
         <div className="relative min-h-[80vh] flex items-center justify-center">
           {/* Phone in center */}
-          <div className={`relative z-10 ${heroInView ? "animate-scale-in" : "opacity-0"}`}>
+          <div className={`relative select-none z-10 ${heroInView ? "animate-scale-in" : "opacity-0"}`}>
             <div className="relative transform hover:scale-105 transition-transform duration-700 animate-float">
               <img
                 src="/images/Frame2.png"
                 alt="Waichatt WhatsApp Business Automation"
-                className="w-full h-auto max-w-sm mx-auto drop-shadow-2xl"
+                className="w-full h-auto max-w-sm mx-auto drop-shadow-2xl select-none"
               />
             </div>
           </div>

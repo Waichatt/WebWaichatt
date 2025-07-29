@@ -38,7 +38,7 @@ const translations = {
   en: {
     // Header
     "nav.home": "Home",
-    "nav.about": "What is Waichatt",
+    "nav.faq": "FAQ",
     "nav.crm": "CRM",
     "nav.plans": "Plans",
     "nav.integrations": "Integrations",
@@ -175,7 +175,7 @@ const translations = {
   es: {
     // Header
     "nav.home": "Inicio",
-    "nav.about": "Qué es Waichatt",
+    "nav.faq": "Preg frecuentes",
     "nav.crm": "CRM",
     "nav.plans": "Planes",
     "nav.integrations": "Integraciones",

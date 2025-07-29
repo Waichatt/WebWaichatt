@@ -16,7 +16,7 @@ export function IntegrationsSection({ scrollY }: IntegrationsSectionProps) {
   const infiniteIntegrations = [...integrations, ...integrations]
 
   return (
-    <section id="integraciones" className="py-20 relative overflow-hidden">
+    <section id="integraciones" className="py-20 relative overflow-hidden select-none">
       <div
         className="absolute inset-0 opacity-30"
         style={{

@@ -8,7 +8,7 @@ export function Footer() {
   const { t } = useLanguage()
 
   return (
-    <footer className="bg-gray-900 text-white py-16 relative overflow-hidden">
+    <footer className="bg-gray-900 text-white py-16 relative overflow-hidden select-none">
       <div className="absolute inset-0 bg-gradient-to-r from-gray-800/50 to-gray-900/50"></div>
       <div className="container mx-auto px-4 relative">
         <div className="grid md:grid-cols-4 gap-8">
