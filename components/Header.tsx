@@ -119,9 +119,9 @@ export function Header({ scrollY }: HeaderProps) {
 
             <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? (
-                <X className={`w-6 h-6 ${isInHeroSection ? "text-white" : "text-white drop-shadow-lg"}`} />
+                <X className={`w-6 h-6 ${isInHeroSection ? "text-white" : "text-[#268656] hover:text-[#31634b] drop-shadow-lg"}`} />
               ) : (
-                <Menu className={`w-6 h-6 ${isInHeroSection ? "text-white" : "text-white drop-shadow-lg"}`} />
+                <Menu className={`w-6 h-6 ${isInHeroSection ? "text-white" : "text-[#268656] hover:text-[#31634b] drop-shadow-lg"}`} />
               )}
             </button>
           </div>

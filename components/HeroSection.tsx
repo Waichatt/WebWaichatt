@@ -92,9 +92,10 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
               <div className="absolute -left-4 top-1/2 w-16 h-0.5 bg-gradient-to-r from-transparent to-white/60"></div>
               <div className="absolute -left-6 top-1/2 w-3 h-3 bg-white/80 rounded-full transform -translate-y-1/2 animate-pulse"></div>
               <div className="text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight whitespace-pre-line">
                   {t("hero.feature.sell")}
                 </h3>
+
                 <p className="text-lg md:text-xl text-white/90 font-medium">{t("hero.feature.sell.sub")}</p>
               </div>
             </div>
