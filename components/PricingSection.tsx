@@ -109,6 +109,7 @@ export function PricingSection() {
 
               <CardContent className="space-y-6">
                 <Button
+                onClick={()=>  window.open("https://wa.me/+5493816814079", "_blank")}
                   className={`w-full group-hover:scale-105 transition-all duration-300 ${
                     plan.popular
                       ? "bg-gradient-to-r from-[#268656] to-[#1f6b4a] hover:from-[#1f6b4a] hover:to-[#268656] text-white animate-pulse-glow"
