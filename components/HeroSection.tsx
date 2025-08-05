@@ -20,7 +20,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/fondo-telefono.avif')",
+          backgroundImage: "url('/images/fondoImagen.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
@@ -133,7 +133,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
                 </Badge>
                 <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
                   {t("hero.title")}{" "}
-                  <span className="bg-gradient-to-r from-[#1E6B49] to-[#7CF663] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#a4ff91] to-[#7bff61] bg-clip-text text-transparent">
                     {t("hero.title.highlight")}
                   </span>
                 </h1>
